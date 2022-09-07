@@ -1,0 +1,18 @@
+﻿abrirei o Package Manager Console cltr + l  limpar tudo
+*ENTITY FRAMEWORK*
+get-help entityframeworkcore para isso tenho que instalar o entityframeworkcore tools e design
+o comando mostra a lista de comandos para fazer o migrations
+
+*MIGRATIONS*
+um código C# que é gerado pelo entity framework para geração de scripts sql
+
+Add-Migration nome da migração = quando executo ele cria um diretorio com os scripts que seriam rodados em banco de dados
+remove-migration = vai remover o arquivo migration
+update-database = a migration é realizada no banco de dados
+Script-Migration = ele vai gerar um arquivo pra mim onde tem toda a criação do banco de dados
+drop-database = ele irá excluir a base de dados deve ter cuidado
+Scaffold-DbContext = possibilidade que dado um banco de dados legado conseguirmos criar um projeto baseado nele 
+a escrita do scaffold fica: 
+scaffold-dbcontext - provider microsoft.entityframeworkcore.sqlserver 
+-connection "Password="sua senha";Persist Security Info=True;User ID="idque coloquei";Initial Catalog=NomedoDB;Data Source=LBR-CP4GDM3" 
+/* ao referenciar isso terei que instalar o install-package microsoft.entityframeworkcore.design para instalar o designer
