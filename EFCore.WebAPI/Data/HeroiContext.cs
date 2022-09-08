@@ -20,7 +20,7 @@ namespace EFCore.WebAPI.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)//optionsBuilder
         {
-            optionsBuilder.UseSqlServer("Password=;Persist Security Info=True;User ID=;Initial Catalog=HeroApp;Data Source=LBR-CP4GDM3");//modificaremos o Catalog que será o nome do banco de dados
+            optionsBuilder.UseSqlServer("Password=;Persist Security Info=True;User ID=;Initial Catalog=HeroApp;Data Source=");//modificaremos o Catalog que será o nome do banco de dados
             //vamos copiar criando um arquivo novo e de texto e adicionando a extenção .udl começando com password
             //necessário instalar Microsoft.EntityFrameworkCore.SqlServer para usar 
             //base.OnConfiguring(optionsBuilder);não foi necessário criou automaticamente
